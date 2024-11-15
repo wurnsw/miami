@@ -6,5 +6,275 @@
     <title>Document</title>
     <link rel="stylesheet" href="./sass/main.scss" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content home">
+          <ul class="header__list">
+            <svg class="home__icon">
+              <use url="./images/sprite.svg#burder-menu"></use>
+            </svg>
+            <svg class="home__icon logo">
+              <use url="./images/sprite.svg#logo"></use>
+            </svg>
+            <svg class="home__icon">
+              <use url="./images/sprite.svg#phone"></use>
+            </svg>
+          </ul>
+        </div>
+        <h1 class="header__title">Miami Condo Kings</h1>
+      </div>
+    </header>
+
+    <aside class="burger-menu">
+      <div class="container">
+        <div class="header__content home">
+          <ul class="header__list">
+            <svg class="home__icon">
+              <use url="./images/sprite.svg#burder-menu"></use>
+            </svg>
+            <svg class="home__icon logo">
+              <use url="./images/sprite.svg#logo"></use>
+            </svg>
+            <svg class="home__icon">
+              <use url="./images/sprite.svg#phone"></use>
+            </svg>
+          </ul>
+        </div>
+        <nav class="burger-menu__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href=""> Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href=""> About Us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href=""> gallery</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href=""> testimonials</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href=""> Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="burger-menu__phone phone">
+          <a class="phone__number" href="tel:+12345555555">+1 234 555-55-55</a>
+          <a class="phone__text" href="tel:+12345555555">call to order</a>
+        </address>
+      </div>
+    </aside>
+
+    <main>
+      <section class="section about">
+        <h2 class="about__title">Miami best Real estate <span>here</span></h2>
+
+        <article class="about__description description">
+          <h3 class="description__title typography-large">
+            Over 50 years experience in love.
+          </h3>
+          <p class="description__subtitle typography-secondary">
+            Mazel and VA Tsukkerman in his "Analysis of musical works."
+            Pointillism, which originated in the music of the early twentieth
+            century, microforms, found a distant historical.
+          </p>
+          <p class="description__subtitle typography-secondary">
+            The market leader in real estate since 2003. Awards Real Estate
+            Company, 2010, 2011, 2013. More than 200 satisfied customers premium
+            segment. We focus only on new buildings and high-level doskanalno
+            know this area better than other specialists. Working directly with
+            developers - so have more useful information about the profitable
+            deals.
+          </p>
+          <p class="description__subtitle typography-secondary">
+            We will never be late!Guaranteed secure transaction - 100%
+          </p>
+        </article>
+      </section>
+
+      <section class="section gallery">
+        <div class="gallery__title title">
+          <h2 class="title__name">Gallery</h2>
+          <svg class="title__icon">
+            <use url="./images/sprite.svg#small-logo"></use>
+          </svg>
+        </div>
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <figure>
+              <img
+                srcset="
+                  ./images/gallery--1-672.webp  1x,
+                  ./images/gallery--1-1344.webp 2x,
+                  ./images/gallery--1-2016.webp 3x
+                "
+                src="./images/gallery--1-672.webp"
+                alt="Marina Palms"
+              />
+              <img
+                srcset="
+                  ./images/gallery--2-324.webp 1x,
+                  ./images/gallery--2-648.webp 2x,
+                  ./images/gallery--2-972.webp 3x
+                "
+                src="./images/gallery--2-324.webp"
+                alt="Marina Palms"
+              />
+              <figcaption class="typography-secondary">
+                <span>Marina Palms</span> / North Miami Beach, FL 33162
+              </figcaption>
+            </figure>
+          </li>
+          <li class="gallery__item">
+            <figure>
+              <img
+                srcset="
+                  ./images/gallery--3-498.webp  1x,
+                  ./images/gallery--3-996.webp  2x,
+                  ./images/gallery--3-2016.webp 3x
+                "
+                src="./images/gallery--3-498.webp"
+                alt="Edition Residens"
+              />
+              <img
+                srcset="
+                  ./images/gallery--4-498.webp  1x,
+                  ./images/gallery--4-640.webp  2x,
+                  ./images/gallery--4-1494.webp 3x
+                "
+                src="./images/gallery--4-498.webp"
+                alt="Edition Residens"
+              />
+              <figcaption class="typography-secondary">
+                <span>Edition Residens</span> / Miami Beach, FL 33139
+              </figcaption>
+            </figure>
+          </li>
+          <li class="gallery__item">
+            <figure>
+              <img
+                srcset="
+                  ./images/gallery--5-324.webp 1x,
+                  ./images/gallery--5-648.webp 2x,
+                  ./images/gallery--5-972.webp 3x
+                "
+                src="./images/gallery--5-324.webp"
+                alt="Faena House"
+              />
+              <img
+                srcset="
+                  ./images/gallery--6-672.webp  1x,
+                  ./images/gallery--6-1344.webp 2x,
+                  ./images/gallery--6-2016.webp 3x
+                "
+                src="./images/gallery--6-672.webp"
+                alt="Faena House"
+              />
+              <figcaption class="typography-secondary">
+                <span>Faena House</span> / Miami Beach, FL 33140
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+
+        <button type="button" class="gallery__button">View all</button>
+      </section>
+
+      <section class="section testimonials">
+        <div class="title">
+          <h2 class="title__name">Testimonials</h2>
+          <svg class="title__icon">
+            <use url="./images/sprite.svg#small-logo"></use>
+          </svg>
+        </div>
+
+        <ul class="testimonials__list">
+          <li class="testimonials__item"></li>
+          <img
+            srcset="
+          ./images/person--1-153 x1,
+          ./images/person--1-306 x2,
+          ./images/person--1-459 x3
+          "
+            src="./images/person--1-153.webp"
+            alt=""
+          />
+          <h3>Leslie Mckinney</h3>
+          <p>CEO</p>
+          <p class="typography-secondary">
+            Nice work, Certificates National Association of Realtors (USA)
+          </p>
+          <li class="testimonials__item"></li>
+          <img
+            srcset="
+          ./images/person--2-153 x1,
+          ./images/person--2-306 x2,
+          ./images/person--2-459 x3
+          "
+            src="./images/person--2-153.webp"
+            alt=""
+          />
+          <h3>Scarlett Hawkins</h3>
+          <p>Senior Vice President</p>
+          <p class="typography-secondary">
+            My soul is illuminated by an unearthly joy, as these beautiful
+            spring morning, which I enjoy with all my heart
+          </p>
+          <li class="testimonials__item"></li>
+          <img
+            srcset="
+          ./images/person--3-153 x1,
+          ./images/person--3-306 x2,
+          ./images/person--3-459 x3
+          "
+            src="./images/person--3-153.webp"
+            alt=""
+          />
+          <h3>Max Henry</h3>
+          <p>Chief Design Officer</p>
+          <p class="typography-secondary">
+            font-family: Roboto; font-size: 16px; font-weight: 400; line-height:
+            27px; text-align: center; text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+          </p>
+        </ul>
+      </section>
+
+      <section class="section contacts">
+        <div class="title">
+          <h2 class="title__name">Contact us</h2>
+          <svg class="title__icon">
+            <use url="./images/sprite.svg#small-logo"></use>
+          </svg>
+        </div>
+        <address>
+          <ul>
+            <li class="contacts__item">
+              Phone
+              <a class="contacts__link" href="tel:+123455555555">
+                +1 234 5555-55-55
+              </a>
+            </li>
+            <li class="contacts__item">
+              Email
+              <a class="contacts__link" href="mailto:hello@miami.com">
+                hello@miami.com
+              </a>
+            </li>
+            <li class="contacts__item">
+              Adress
+              <a
+                class="contacts__link"
+                href="https://maps.app.goo.gl/EeY18VYVfovnNv7c9"
+              >
+                400 first ave. n. suite 700 Minneapolis, MN 55401
+              </a>
+            </li>
+          </ul>
+        </address>
+      </section>
+    </main>
+  </body>
 </html>
