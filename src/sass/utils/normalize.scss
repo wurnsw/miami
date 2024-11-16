@@ -15,3 +15,8 @@ a {
 *::before {
   box-sizing: border-box;
 }
+
+address{
+  font-family: $font-main;
+  font-style: normal;
+}
