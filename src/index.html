@@ -3,63 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Miami</title>
     <link rel="stylesheet" href="./sass/main.scss" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__content home">
-          <ul class="header__list">
-            <svg class="home__icon">
-              <use url="./images/sprite.svg#burder-menu"></use>
-            </svg>
-            <svg class="home__icon logo">
-              <use url="./images/sprite.svg#logo"></use>
-            </svg>
-            <svg class="home__icon">
-              <use url="./images/sprite.svg#phone"></use>
-            </svg>
+        <div class="header__content header-home" id="home">
+          <ul class="header-home__list">
+            <li class="header-home__item">
+              <a href="#burger-menu" class="header-home__link">
+                <svg class="header-home__icon">
+                  <use href="./images/sprite.svg#burger-menu"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-home__item">
+              <a href="#home" class="header-home__link">
+                <svg class="header-home__icon logo">
+                  <use href="./images/sprite.svg#logo"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-home__item">
+              <a href="#" class="header-home__link">
+                <svg class="header-home__icon">
+                  <use href="./images/sprite.svg#phone"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
         <h1 class="header__title">Miami Condo Kings</h1>
       </div>
     </header>
 
-    <aside class="burger-menu">
+    <aside class="burger-menu" id="burger-menu">
       <div class="container">
-        <div class="header__content home">
-          <ul class="header__list">
-            <svg class="home__icon">
-              <use url="./images/sprite.svg#burder-menu"></use>
-            </svg>
-            <svg class="home__icon logo">
-              <use url="./images/sprite.svg#logo"></use>
-            </svg>
-            <svg class="home__icon">
-              <use url="./images/sprite.svg#phone"></use>
-            </svg>
+        <div class="burger-menu__content header-home">
+          <ul class="header-home__list">
+            <li class="header-home__item">
+              <a
+                href="#home"
+                class="header-home__link header-home__link--close"
+              >
+                <svg class="header-home__icon header-home__icon--close">
+                  <use href="./images/sprite.svg#close"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-home__item">
+              <a href="#home" class="header-home__link">
+                <svg class="header-home__icon logo">
+                  <use href="./images/sprite.svg#logo"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-home__item">
+              <a href="#" class="header-home__link">
+                <svg class="header-home__icon">
+                  <use href="./images/sprite.svg#phone"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
+
         <nav class="burger-menu__nav nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href=""> Home</a>
+              <a class="nav__link" href="#home"> Home</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href=""> About Us</a>
+              <a class="nav__link" href="#about"> About Us</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href=""> gallery</a>
+              <a class="nav__link" href="#gallery"> gallery</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href=""> testimonials</a>
+              <a class="nav__link" href="#testimonials"> testimonials</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href=""> Contacts</a>
+              <a class="nav__link" href="#contacts"> Contacts</a>
             </li>
           </ul>
         </nav>
+
         <address class="burger-menu__phone phone">
           <a class="phone__number" href="tel:+12345555555">+1 234 555-55-55</a>
           <a class="phone__text" href="tel:+12345555555">call to order</a>
@@ -68,18 +97,22 @@
     </aside>
 
     <main>
-      <section class="section about">
-        <h2 class="about__title">Miami best Real estate <span>here</span></h2>
+      <section class="section about" id="about">
+        <h2 class="about__title">
+          Miami best Real estate <span class="typography-blue">here</span>
+        </h2>
 
         <article class="about__description description">
           <h3 class="description__title typography-large">
             Over 50 years experience in love.
           </h3>
+
           <p class="description__subtitle typography-secondary">
             Mazel and VA Tsukkerman in his "Analysis of musical works."
             Pointillism, which originated in the music of the early twentieth
             century, microforms, found a distant historical.
           </p>
+
           <p class="description__subtitle typography-secondary">
             The market leader in real estate since 2003. Awards Real Estate
             Company, 2010, 2011, 2013. More than 200 satisfied customers premium
@@ -88,23 +121,26 @@
             developers - so have more useful information about the profitable
             deals.
           </p>
+
           <p class="description__subtitle typography-secondary">
             We will never be late!Guaranteed secure transaction - 100%
           </p>
         </article>
       </section>
 
-      <section class="section gallery">
+      <section class="section gallery" id="gallery">
         <div class="gallery__title title">
           <h2 class="title__name">Gallery</h2>
           <svg class="title__icon">
-            <use url="./images/sprite.svg#small-logo"></use>
+            <use href="./images/sprite.svg#small-logo"></use>
           </svg>
         </div>
+
         <ul class="gallery__list">
           <li class="gallery__item">
-            <figure>
+            <figure class="gallery__hotel hotel">
               <img
+                class="hotel__image"
                 srcset="
                   ./images/gallery--1-672.webp  1x,
                   ./images/gallery--1-1344.webp 2x,
@@ -114,6 +150,7 @@
                 alt="Marina Palms"
               />
               <img
+                class="hotel__image"
                 srcset="
                   ./images/gallery--2-324.webp 1x,
                   ./images/gallery--2-648.webp 2x,
@@ -122,23 +159,27 @@
                 src="./images/gallery--2-324.webp"
                 alt="Marina Palms"
               />
-              <figcaption class="typography-secondary">
-                <span>Marina Palms</span> / North Miami Beach, FL 33162
+              <figcaption class="hotel__info typography-secondary">
+                <span class="typography-blue">Marina Palms</span> / North Miami
+                Beach, FL 33162
               </figcaption>
             </figure>
           </li>
+
           <li class="gallery__item">
-            <figure>
+            <figure class="gallery__hotel hotel">
               <img
+                class="hotel__image"
                 srcset="
                   ./images/gallery--3-498.webp  1x,
                   ./images/gallery--3-996.webp  2x,
-                  ./images/gallery--3-2016.webp 3x
+                  ./images/gallery--3-1494.webp 3x
                 "
                 src="./images/gallery--3-498.webp"
                 alt="Edition Residens"
               />
               <img
+                class="hotel__image"
                 srcset="
                   ./images/gallery--4-498.webp  1x,
                   ./images/gallery--4-640.webp  2x,
@@ -147,14 +188,16 @@
                 src="./images/gallery--4-498.webp"
                 alt="Edition Residens"
               />
-              <figcaption class="typography-secondary">
-                <span>Edition Residens</span> / Miami Beach, FL 33139
+              <figcaption class="hotel__info typography-secondary">
+                <span class="typography-blue">Edition Residens</span> / Miami
+                Beach, FL 33139
               </figcaption>
             </figure>
           </li>
           <li class="gallery__item">
-            <figure>
+            <figure class="gallery__hotel hotel">
               <img
+                class="hotel__image"
                 srcset="
                   ./images/gallery--5-324.webp 1x,
                   ./images/gallery--5-648.webp 2x,
@@ -164,6 +207,7 @@
                 alt="Faena House"
               />
               <img
+                class="hotel__image"
                 srcset="
                   ./images/gallery--6-672.webp  1x,
                   ./images/gallery--6-1344.webp 2x,
@@ -172,8 +216,9 @@
                 src="./images/gallery--6-672.webp"
                 alt="Faena House"
               />
-              <figcaption class="typography-secondary">
-                <span>Faena House</span> / Miami Beach, FL 33140
+              <figcaption class="hotel__info typography-secondary">
+                <span class="typography-blue">Faena House</span> / Miami Beach,
+                FL 33140
               </figcaption>
             </figure>
           </li>
@@ -182,75 +227,81 @@
         <button type="button" class="gallery__button">View all</button>
       </section>
 
-      <section class="section testimonials">
+      <section class="section testimonials" id="testimonials">
         <div class="title">
           <h2 class="title__name">Testimonials</h2>
           <svg class="title__icon">
-            <use url="./images/sprite.svg#small-logo"></use>
+            <use href="./images/sprite.svg#small-logo"></use>
           </svg>
         </div>
 
         <ul class="testimonials__list">
-          <li class="testimonials__item"></li>
-          <img
-            srcset="
-          ./images/person--1-153 x1,
-          ./images/person--1-306 x2,
-          ./images/person--1-459 x3
-          "
-            src="./images/person--1-153.webp"
-            alt=""
-          />
-          <h3>Leslie Mckinney</h3>
-          <p>CEO</p>
-          <p class="typography-secondary">
-            Nice work, Certificates National Association of Realtors (USA)
-          </p>
-          <li class="testimonials__item"></li>
-          <img
-            srcset="
-          ./images/person--2-153 x1,
-          ./images/person--2-306 x2,
-          ./images/person--2-459 x3
-          "
-            src="./images/person--2-153.webp"
-            alt=""
-          />
-          <h3>Scarlett Hawkins</h3>
-          <p>Senior Vice President</p>
-          <p class="typography-secondary">
-            My soul is illuminated by an unearthly joy, as these beautiful
-            spring morning, which I enjoy with all my heart
-          </p>
-          <li class="testimonials__item"></li>
-          <img
-            srcset="
-          ./images/person--3-153 x1,
-          ./images/person--3-306 x2,
-          ./images/person--3-459 x3
-          "
-            src="./images/person--3-153.webp"
-            alt=""
-          />
-          <h3>Max Henry</h3>
-          <p>Chief Design Officer</p>
-          <p class="typography-secondary">
-            font-family: Roboto; font-size: 16px; font-weight: 400; line-height:
-            27px; text-align: center; text-underline-position: from-font;
-            text-decoration-skip-ink: none;
-          </p>
+          <li class="testimonials__item person">
+            <img
+              class="person__image"
+              srcset="
+                ./images/person--1-153.webp 1x,
+                ./images/person--1-306.webp 2x,
+                ./images/person--1-459.webp 3x
+              "
+              src="./images/person--1-153.webp"
+              alt=""
+            />
+            <h3 class="person__name typography-large">Leslie Mckinney</h3>
+            <p class="person__role">CEO</p>
+            <p class="person__review typography-secondary">
+              Nice work, Certificates National Association of Realtors (USA)
+            </p>
+          </li>
+          <li class="testimonials__item person">
+            <img
+              class="person__image"
+              srcset="
+                ./images/person--2-153.webp 1x,
+                ./images/person--2-306.webp 2x,
+                ./images/person--2-459.webp 3x
+              "
+              src="./images/person--2-153.webp"
+              alt=""
+            />
+            <h3 class="person__name typography-large">Scarlett Hawkins</h3>
+            <p class="person__role">Senior Vice President</p>
+            <p class="person__review typography-secondary">
+              My soul is illuminated by an unearthly joy, as these beautiful
+              spring morning, which I enjoy with all my heart
+            </p>
+          </li>
+          <li class="testimonials__item person">
+            <img
+              class="person__image"
+              srcset="
+                ./images/person--3-153.webp 1x,
+                ./images/person--3-306.webp 2x,
+                ./images/person--3-459.webp 3x
+              "
+              src="./images/person--3-153.webp"
+              alt=""
+            />
+            <h3 class="person__name typography-large">Max Henry</h3>
+            <p class="person__role">Chief Design Officer</p>
+            <p class="person__review typography-secondary">
+              When my lovely valley of steam rises and half-day sun is above an
+              impermeable
+            </p>
+          </li>
         </ul>
       </section>
 
-      <section class="section contacts">
+      <section class="section contacts" id="contacts">
         <div class="title">
           <h2 class="title__name">Contact us</h2>
           <svg class="title__icon">
-            <use url="./images/sprite.svg#small-logo"></use>
+            <use href="./images/sprite.svg#small-logo"></use>
           </svg>
         </div>
-        <address>
-          <ul>
+
+        <address class="contacts__block">
+          <ul class="contacts__list">
             <li class="contacts__item">
               Phone
               <a class="contacts__link" href="tel:+123455555555">
@@ -268,13 +319,44 @@
               <a
                 class="contacts__link"
                 href="https://maps.app.goo.gl/EeY18VYVfovnNv7c9"
+                target="blank"
               >
                 400 first ave. n. suite 700 Minneapolis, MN 55401
               </a>
             </li>
           </ul>
         </address>
+
+        <form class="contacts__form form" action="#">
+          <input
+            class="form__input"
+            placeholder="Name"
+            name="name"
+            type="text"
+          />
+
+          <input
+            class="form__input"
+            placeholder="Email"
+            name="email"
+            type="text"
+          />
+
+          <textarea
+            class="form__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+
+          <button class="form__button" type="button">Consultation</button>
+        </form>
       </section>
     </main>
+
+    <footer>
+      <svg class="logo">
+        <use href="./images/sprite.svg#logo"></use>
+      </svg>
+    </footer>
   </body>
 </html>
