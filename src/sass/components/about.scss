@@ -12,6 +12,8 @@
     @include title-Typography;
 
     @include onDesktop {
+      margin: 0;
+      
       width: 324px;
       
       font-size: 48px;
