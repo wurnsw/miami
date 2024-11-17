@@ -1,6 +1,10 @@
 .gallery {
   &__title {
     margin-bottom: 29px;
+
+    @include onDesktop {
+      margin-bottom: 56px;
+    }
   }
 
   &__content {

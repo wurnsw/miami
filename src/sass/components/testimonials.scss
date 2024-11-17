@@ -1,0 +1,20 @@
+.testimonials {
+  &__title {
+    margin-bottom: 29px;
+
+    @include onDesktop {
+      margin-bottom: 56px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    @include onDesktop {
+      flex-direction: row;
+      gap: 24px;
+    }
+  }
+}

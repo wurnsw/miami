@@ -1,0 +1,44 @@
+.person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include onDesktop {
+    width: 324px;
+  }
+
+  &__image {
+    margin-bottom: 28px;
+
+    border-radius: 50%;
+
+    @include onDesktop {
+      margin-bottom: 32px;
+
+      width: 150px;
+    }
+  }
+
+  &__name {
+    @include blue-Typography;
+  }
+
+  &__role {
+    padding: 4px 0 13px;
+
+    line-height: 27px;
+    font-size: 14px;
+
+    color: #9fadc2;
+
+    @include onDesktop {
+      padding: 4px 0;
+    }
+  }
+
+  &__review {
+    @include secondary-Typography;
+    text-align: center;
+  }
+}
