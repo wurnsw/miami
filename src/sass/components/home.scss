@@ -1,0 +1,44 @@
+.home {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--burger-menu {
+      justify-content: start;
+      gap: 75px;
+
+      @include onDesktop {
+        gap: 411px;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+
+    &--none {
+      display: none;
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+
+    @include onDesktop {
+      width: 34px;
+      height: 34px;
+    }
+
+    &--logo {
+      height: 48px;
+      width: 82px;
+
+      @include onDesktop {
+        width: 130px;
+        height: 80px;
+      }
+    }
+  }
+}

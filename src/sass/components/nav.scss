@@ -13,4 +13,18 @@
 
     color: $color-white;
   }
+
+  &__link {
+    padding-bottom: 8px;
+
+    border-bottom: 1px solid transparent;
+
+    transition: all 250ms;
+
+    @include onDesktop {
+      &:hover {
+        border-bottom: 1px solid $color-white;
+      }
+    }
+  }
 }
