@@ -7,7 +7,7 @@
 
   background: url("../images/home-bg.webp");
 
-  @include bg-home;
+  @include backgroundImage;
 
   @include bg-pixelRatio-2;
 
