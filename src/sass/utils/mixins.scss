@@ -66,3 +66,10 @@
   line-height: 27px;
   color: $color-text-grey;
 }
+
+@mixin grey-Typography {
+  font-size: 14px;
+  line-height: 27px;
+
+  color: $color-grey;
+}

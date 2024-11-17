@@ -1,0 +1,42 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__input {
+    padding: 14px 17px;
+
+    height: 48px;
+    width: 100%;
+
+    font-family: $font-main;
+    font-size: 14px;
+    line-height: 20px;
+
+    outline: none;
+
+    border: 2px solid $color-input;
+    border-radius: 8px;
+
+    color: #8f99a8;
+    background-color: $color-input;
+
+    transition: border 250ms;
+
+    &:hover {
+      border: 2px solid #ccd0e0;
+    }
+
+    &:focus {
+      border: 2px solid $color-blue;
+    }
+
+    &--message {
+      margin-bottom: 16px;
+
+      height: 144px;
+
+      resize: none;
+    }
+  }
+}

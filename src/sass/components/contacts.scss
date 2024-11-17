@@ -1,0 +1,49 @@
+.contacts {
+  &__title {
+    margin-bottom: 29px;
+
+    @include onDesktop {
+      margin-bottom: 56px;
+    }
+  }
+
+  &__content {
+    @include onDesktop {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__block {
+    margin-bottom: 32px;
+
+    @include onDesktop {
+      margin: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include onDesktop {
+      flex-wrap: wrap;
+      gap: 24px 111px;
+
+      height: 148px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @include grey-Typography;
+  }
+
+  &__link {
+    @include secondary-Typography;
+  }
+}

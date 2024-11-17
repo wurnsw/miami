@@ -242,7 +242,9 @@
                 </figure>
               </li>
             </ul>
-            <button type="button" class="gallery__button">View all</button>
+            <button type="button" class="gallery__button button">
+              View all
+            </button>
           </div>
         </div>
       </section>
@@ -316,61 +318,73 @@
         </div>
       </section>
 
-      <section class="section contacts" hidden id="contacts">
+      <section class="section contacts" id="contacts">
         <div class="container">
-          <div class="title">
+          <div class="contacts__title title">
             <h2 class="title__name">Contact us</h2>
             <svg class="title__icon">
               <use href="./images/sprite.svg#small-logo"></use>
             </svg>
           </div>
+          <div class="contacts__content">
+            <address class="contacts__block">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  Phone
+                  <a class="contacts__link" href="tel:+123455555555">
+                    +1 234 5555-55-55
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  Email
+                  <a class="contacts__link" href="mailto:hello@miami.com">
+                    hello@miami.com
+                  </a>
+                </li>
 
-          <address class="contacts__block">
-            <ul class="contacts__list">
-              <li class="contacts__item">
-                Phone
-                <a class="contacts__link" href="tel:+123455555555">
-                  +1 234 5555-55-55
-                </a>
-              </li>
-              <li class="contacts__item">
-                Email
-                <a class="contacts__link" href="mailto:hello@miami.com">
-                  hello@miami.com
-                </a>
-              </li>
-              <li class="contacts__item">
-                Adress
-                <a
-                  class="contacts__link"
-                  href="https://maps.app.goo.gl/EeY18VYVfovnNv7c9"
-                  target="blank"
-                >
-                  400 first ave. n. suite 700 Minneapolis, MN 55401
-                </a>
-              </li>
-            </ul>
-          </address>
-          <form class="contacts__form form" action="#">
-            <input
-              class="form__input"
-              placeholder="Name"
-              name="name"
-              type="text"
-            />
-            <input
-              class="form__input"
-              placeholder="Email"
-              name="email"
-              type="text"
-            />
-            <textarea
-              class="form__message"
-              placeholder="Message"
-              name="message"
-            ></textarea>
-            <button class="form__button" type="button">Consultation</button>
-          </form>
+                <li class="contacts__item">
+                  Adress
+                  <a
+                    class="contacts__link"
+                    href="https://maps.app.goo.gl/EeY18VYVfovnNv7c9"
+                    target="blank"
+                  >
+                    400 first ave. n.
+                    <br />
+                    suite 700
+                    <br />
+                    Minneapolis, MN 55401
+                  </a>
+                </li>
+              </ul>
+            </address>
+
+            <form class="contacts__form form" action="#">
+              <input
+                class="form__input"
+                placeholder="Name"
+                name="name"
+                type="text"
+              />
+              <input
+                class="form__input"
+                placeholder="Email"
+                name="email"
+                type="text"
+              />
+              <textarea
+                class="form__input form__input--message"
+                placeholder="Message"
+                name="message"
+              ></textarea>
+              <button
+                class="form__button button button--contacts"
+                type="button"
+              >
+                Consultation
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </main>

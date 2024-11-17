@@ -27,10 +27,7 @@
   &__role {
     padding: 4px 0 13px;
 
-    line-height: 27px;
-    font-size: 14px;
-
-    color: #9fadc2;
+    @include grey-Typography;
 
     @include onDesktop {
       padding: 4px 0;
