@@ -1,7 +1,6 @@
 .person {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 
   @include onDesktop {
