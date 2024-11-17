@@ -1,0 +1,15 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+
+  &__name{
+    @include title-Typography;
+  }
+
+  &__icon{
+    width: 20px;
+    height: 13px;
+  }
+}

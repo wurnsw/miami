@@ -27,7 +27,7 @@
                 </a>
               </li>
               <li class="header-home__item">
-                <a href="#" class="header-home__link">
+                <a href="#" class="header-home__link header-home__link--phone">
                   <svg class="header-home__icon">
                     <use href="./images/sprite.svg#phone"></use>
                   </svg>
@@ -145,97 +145,111 @@
               <use href="./images/sprite.svg#small-logo"></use>
             </svg>
           </div>
-          <ul class="gallery__list">
-            <li class="gallery__item">
-              <figure class="gallery__hotel hotel">
-                <img
-                  class="hotel__image"
-                  srcset="
-                    ./images/gallery--1-672.webp  1x,
-                    ./images/gallery--1-1344.webp 2x,
-                    ./images/gallery--1-2016.webp 3x
-                  "
-                  src="./images/gallery--1-672.webp"
-                  alt="Marina Palms"
-                />
-                <img
-                  class="hotel__image"
-                  srcset="
-                    ./images/gallery--2-324.webp 1x,
-                    ./images/gallery--2-648.webp 2x,
-                    ./images/gallery--2-972.webp 3x
-                  "
-                  src="./images/gallery--2-324.webp"
-                  alt="Marina Palms"
-                />
-                <figcaption class="hotel__info">
-                  <span class="hotel__name">Marina Palms</span> / North Miami
-                  Beach, FL 33162
-                </figcaption>
-              </figure>
-            </li>
-            <li class="gallery__item">
-              <figure class="gallery__hotel hotel">
-                <img
-                  class="hotel__image"
-                  srcset="
-                    ./images/gallery--3-498.webp  1x,
-                    ./images/gallery--3-996.webp  2x,
-                    ./images/gallery--3-1494.webp 3x
-                  "
-                  src="./images/gallery--3-498.webp"
-                  alt="Edition Residens"
-                />
-                <img
-                  class="hotel__image"
-                  srcset="
-                    ./images/gallery--4-498.webp  1x,
-                    ./images/gallery--4-640.webp  2x,
-                    ./images/gallery--4-1494.webp 3x
-                  "
-                  src="./images/gallery--4-498.webp"
-                  alt="Edition Residens"
-                />
-                <figcaption class="hotel__info">
-                  <span class="hotel__name">Edition Residens</span> / Miami
-                  Beach, FL 33139
-                </figcaption>
-              </figure>
-            </li>
-            <li class="gallery__item">
-              <figure class="gallery__hotel hotel">
-                <img
-                  class="hotel__image"
-                  srcset="
-                    ./images/gallery--5-324.webp 1x,
-                    ./images/gallery--5-648.webp 2x,
-                    ./images/gallery--5-972.webp 3x
-                  "
-                  src="./images/gallery--5-324.webp"
-                  alt="Faena House"
-                />
-                <img
-                  class="hotel__image"
-                  srcset="
-                    ./images/gallery--6-672.webp  1x,
-                    ./images/gallery--6-1344.webp 2x,
-                    ./images/gallery--6-2016.webp 3x
-                  "
-                  src="./images/gallery--6-672.webp"
-                  alt="Faena House"
-                />
-                <figcaption class="hotel__info">
-                  <span class="hotel__name">Faena House</span> / Miami Beach, FL
-                  33140
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-          <button type="button" class="gallery__button">View all</button>
+          <div class="gallery__content">
+            <ul class="gallery__list">
+              <li class="gallery__item">
+                <figure class="gallery__hotel hotel">
+                  <div class="hotel__image-container">
+                    <img
+                      class="hotel__image"
+                      srcset="
+                        ./images/gallery--1-672.webp  1x,
+                        ./images/gallery--1-1344.webp 2x,
+                        ./images/gallery--1-2016.webp 3x
+                      "
+                      src="./images/gallery--1-672.webp"
+                      alt="Marina Palms"
+                      width="672"
+                    />
+                    <img
+                      class="hotel__image"
+                      srcset="
+                        ./images/gallery--2-324.webp 1x,
+                        ./images/gallery--2-648.webp 2x,
+                        ./images/gallery--2-972.webp 3x
+                      "
+                      src="./images/gallery--2-324.webp"
+                      alt="Marina Palms"
+                      width="324"
+                    />
+                  </div>
+                  <figcaption class="hotel__info">
+                    <span class="hotel__name">Marina Palms</span> / North Miami
+                    Beach, FL 33162
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery__item">
+                <figure class="gallery__hotel hotel">
+                  <div class="hotel__image-container">
+                    <img
+                      class="hotel__image"
+                      srcset="
+                        ./images/gallery--3-498.webp  1x,
+                        ./images/gallery--3-996.webp  2x,
+                        ./images/gallery--3-1494.webp 3x
+                      "
+                      src="./images/gallery--3-498.webp"
+                      alt="Edition Residens"
+                      width="498"
+                    />
+                    <img
+                      class="hotel__image"
+                      srcset="
+                        ./images/gallery--4-498.webp  1x,
+                        ./images/gallery--4-640.webp  2x,
+                        ./images/gallery--4-1494.webp 3x
+                      "
+                      src="./images/gallery--4-498.webp"
+                      alt="Edition Residens"
+                      width="498"
+                    />
+                  </div>
+                  <figcaption class="hotel__info">
+                    <span class="hotel__name">Edition Residens</span> / Miami
+                    Beach, FL 33139
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="gallery__item">
+                <figure class="gallery__hotel hotel">
+                  <div class="hotel__image-container">
+                    <img
+                      class="hotel__image"
+                      srcset="
+                        ./images/gallery--5-324.webp 1x,
+                        ./images/gallery--5-648.webp 2x,
+                        ./images/gallery--5-972.webp 3x
+                      "
+                      src="./images/gallery--5-324.webp"
+                      alt="Faena House"
+                      width="324"
+                    />
+                    <img
+                      class="hotel__image"
+                      srcset="
+                        ./images/gallery--6-672.webp  1x,
+                        ./images/gallery--6-1344.webp 2x,
+                        ./images/gallery--6-2016.webp 3x
+                      "
+                      src="./images/gallery--6-672.webp"
+                      alt="Faena House"
+                      width="672"
+                    />
+                  </div>
+                  <figcaption class="hotel__info">
+                    <span class="hotel__name">Faena House</span> / Miami Beach,
+                    FL 33140
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <button type="button" class="gallery__button">View all</button>
+          </div>
         </div>
       </section>
 
-      <section class="section testimonials" id="testimonials">
+      <section class="section testimonials" hidden id="testimonials">
         <div class="container">
           <div class="title">
             <h2 class="title__name">Testimonials</h2>
@@ -301,7 +315,7 @@
         </div>
       </section>
 
-      <section class="section contacts" id="contacts">
+      <section class="section contacts" hidden id="contacts">
         <div class="container">
           <div class="title">
             <h2 class="title__name">Contact us</h2>
