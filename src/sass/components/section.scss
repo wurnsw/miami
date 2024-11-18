@@ -1,15 +1,15 @@
 .section {
-  padding-bottom: 64px;
+  padding-top: 64px;
 
   @include onDesktop {
-    padding-bottom: 104px;
+    padding-top: 104px;
   }
-  
-  &:first-child {
-    padding-top: 64px;
+
+  &:last-child {
+    padding-bottom: 64px;
 
     @include onDesktop {
-      padding-top: 104px;
+      padding-bottom: 104px;
     }
   }
 }

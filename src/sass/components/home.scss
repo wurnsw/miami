@@ -15,7 +15,42 @@
   }
 
   &__link {
+    position: relative;
+
     display: flex;
+    align-items: center;
+
+    @include onDesktop {
+      &--phone {
+        &::before {
+          position: absolute;
+          transform: translateX(calc(-100% - 16px));
+
+          width: max-content;
+
+          content: "+1 234 555-55-55";
+
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 16px;
+          letter-spacing: 2px;
+
+          color: $color-white;
+
+          opacity: 0;
+
+          pointer-events: none;
+
+          transition: opacity 250ms;
+        }
+
+        &:hover::before {
+          opacity: 1;
+
+          pointer-events: all;
+        }
+      }
+    }
 
     &--none {
       display: none;
