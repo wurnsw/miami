@@ -53,19 +53,19 @@ address {
 }
 
 .section {
-  padding-bottom: 64px;
-}
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-bottom: 104px;
-  }
-}
-.section:first-child {
   padding-top: 64px;
 }
 @media screen and (min-width: 1200px) {
-  .section:first-child {
+  .section {
     padding-top: 104px;
+  }
+}
+.section:last-child {
+  padding-bottom: 64px;
+}
+@media screen and (min-width: 1200px) {
+  .section:last-child {
+    padding-bottom: 104px;
   }
 }
 
@@ -140,7 +140,29 @@ address {
   }
 }
 .home__link {
+  position: relative;
   display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .home__link--phone::before {
+    position: absolute;
+    transform: translateX(calc(-100% - 16px));
+    width: max-content;
+    content: "+1 234 555-55-55";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms;
+  }
+  .home__link--phone:hover::before {
+    opacity: 1;
+    pointer-events: all;
+  }
 }
 .home__link--none {
   display: none;
