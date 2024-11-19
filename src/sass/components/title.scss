@@ -4,17 +4,24 @@
   align-items: center;
   gap: 6px;
 
-  &__name {
-    @include title-Typography;
+  @include title-Typography;
 
-    @include onDesktop {
-      font-size: 48px;
-      line-height: 48px;
-    }
-  }
+  &::after {
+    content: "";
+    
+    position: relative;
+    bottom: 0;
 
-  &__icon {
     width: 20px;
     height: 13px;
+
+    background-image: url("../images/title-logo.svg");
+
+    @include backgroundImage;
+  }
+
+  @include onDesktop {
+    font-size: 48px;
+    line-height: 48px;
   }
 }
